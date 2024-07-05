@@ -13,10 +13,13 @@ No, It was made entirely for fun.
 ### How do I use it?
 
 ```sbp.py -to <png,jpg,tiff,...>```
+
 Convert an image to a format that can be read by the Pillow library
 
 ```sbp.py -view myimage.sbp```
+
 View a SBP file
 
 ```sbp.py -from myimage.sbp <png,tiff,webp>```
+
 Convert a SBP file to a file format.
