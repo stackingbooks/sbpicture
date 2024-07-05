@@ -12,6 +12,8 @@ No, It was made entirely for fun.
 
 ### How do I use it?
 
+You can view a SBP file by drag and dropping it into the python file/opening it with the python file.
+
 ```sbp.py -to <png,jpg,tiff,...>```
 
 Convert an image to a format that can be read by the Pillow library
