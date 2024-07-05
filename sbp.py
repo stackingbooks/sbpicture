@@ -18,7 +18,10 @@ def tosbp(pth):
     data = ""
     for x in range(im.size[0]):
         for y in range(im.size[1]):
-            hex = '%02x%02x%02x%02x' % (pix[x,y][0],pix[x,y][1],pix[x,y][2],pix[x,y][3])
+            if len(pix[x,y]) == 3:
+                hex = '%02x%02x%02x%02x' % (pix[x,y][0],pix[x,y][1],pix[x,y][2],255)
+            else:
+                hex = '%02x%02x%02x%02x' % (pix[x,y][0],pix[x,y][1],pix[x,y][2],pix[x,y][3])
             data = data + hex
         data = data + '\n'
     
