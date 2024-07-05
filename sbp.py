@@ -113,7 +113,7 @@ def fromsbp(pth, format):
         
         x = 0
         for i in range(len(lines)-1):
-            line = wrap(lines[i], 8)
+            line = wrap(lines[i+1], 8)
             x += 1
             y = 0
             for j in range(len(line)):
